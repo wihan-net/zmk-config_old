@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: 8b38c3b536635d7a6226f9c5b8af22f46c5ebdb7  # Commit-Hash vom 2023-05-05
+      revision: 8b38c3b536635d7a6226f9c5b8af22f46c5ebdb7
       import: app/west.yml
   self:
     path: config
