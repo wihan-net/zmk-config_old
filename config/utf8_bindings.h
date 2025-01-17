@@ -18,21 +18,19 @@
 
 
 
-#define UTF8(name, L1, L2, L3, L4) \
-    / { \
-        macros { \
-            name: name { \
-                label = "name"; \
-                compatible = "zmk,behavior-macro"; \
-                wait-ms = <0>; \
-                tap-ms = <0>; \
-                #binding-cells = <0>; \
-                bindings = <&macro_tap &kp LS(LC(U))>, <&macro_tap &kp L1 &kp L2 &kp L3 &kp L4>, <&macro_tap &kp SPACE>; \
-            }; \
+/ { \
+    macros { \
+        wr_test: wr_test { \
+            label = "name"; \
+            compatible = "zmk,behavior-macro"; \
+            wait-ms = <0>; \
+            tap-ms = <0>; \
+            #binding-cells = <0>; \
+            bindings = <&macro_tap &kp LS(LC(U))>, <&macro_tap &kp N0 &kp N0 &kp A &kp N9>, <&macro_tap &kp SPACE>; \
         }; \
-    };
+    }; \
+};
 
-UTF8(wr_test, N0, N0, A, N9)
 
 
 
