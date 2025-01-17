@@ -22,6 +22,7 @@
     / { \
         macros { \
             name: name { \
+                label = "name"; \
                 compatible = "zmk,behavior-macro"; \
                 wait-ms = <0>; \
                 tap-ms = <0>; \
