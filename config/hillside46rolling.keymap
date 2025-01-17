@@ -37,9 +37,9 @@
     // --------------------------------------------------
         KLEIN {
             bindings = <
-        &kp Q      &kp W  &kp K  &kp Z    &kp D    &kp P                              &kp O         &kp G      &kp L   &kp M          &kp SQT     &kp PLUS
-        &kp TAB    &kp H  &kp C  &kp S    &kp T    &kp U                              &kp R         &kp I      &kp E   &kp N          &kp A       &kp SLASH
-        &kp LCTRL  &kp V  &kp X  &kp Y    &kp F    &kp DOT    &to MOUSE      &kp RALT &kp BACKSPACE &kp B      &kp J   &kp MUTE_UMLA  &kp MINUS   &kp COLON
+        &kp Q      &kp W  &kp K  &kp Z    &kp D    &kp P                              &kp O         &kp G      &kp L   &kp M       &kp SQT     &kp PLUS
+        &kp TAB    &kp H  &kp C  &kp S    &kp T    &kp U                              &kp R         &kp I      &kp E   &kp N       &kp A       &kp SLASH
+        &kp LCTRL  &kp V  &kp X  &kp Y    &kp F    &kp DOT    &to MOUSE      &kp RALT &kp BACKSPACE &kp B      &kp J   &kp U_0308  &kp MINUS   &kp COLON
                                  &kp LGUI &kp LALT &mo GROSS  &kp SPC        &kp ENT  &mo ZAHL1     &mo NAVI1  &mo SONDR
             >;
         };
@@ -49,9 +49,9 @@
     // --------------------------------------------------
         GROSS {
             bindings = <
-        &kp Q      &kp W  &kp K  &kp Z    &kp D    &kp P                               &kp O       &kp G      &kp L      &kp M          &kp DQT    &kp ASTERISK
-        &kp BTAB   &kp H  &kp C  &kp S    &kp T    &kp U                               &kp R       &kp I      &kp E      &kp N          &kp A      &kp BSLH
-        &kp LCTRL  &kp V  &kp X  &kp Y    &kp F    &kp COMMA  &to MOUSE      &kp RALT  &kp DELETE  &kp B      &kp J      &kp MUTE_UMLA  &kp MINUS  &kp SEMI
+        &kp Q      &kp W  &kp K  &kp Z    &kp D    &kp P                               &kp O       &kp G      &kp L      &kp M       &kp DQT    &kp ASTERISK
+        &kp BTAB   &kp H  &kp C  &kp S    &kp T    &kp U                               &kp R       &kp I      &kp E      &kp N       &kp A      &kp BSLH
+        &kp LCTRL  &kp V  &kp X  &kp Y    &kp F    &kp COMMA  &to MOUSE      &kp RALT  &kp DELETE  &kp B      &kp J      &kp U_0308  &kp MINUS  &kp SEMI
                                  &kp LGUI &kp LALT &mo KLEIN  &kp SPC        &kp ENT   &mo ZAHL2   &mo NAVI2  &mo FUNKT
             >;
         };
@@ -61,9 +61,9 @@
     // --------------------------------------------------
         ZAHL1 {
             bindings = <
-        &kp GRAVE  &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp KP_N4  &kp KP_N5                        &kp KP_N6  &kp KP_N7  &kp KP_N8   &kp KP_N9       &kp KP_N0  &kp CIRCUMFLEX
-        &none      &kp LT     &kp LBKT   &kp LBRACE  &kp LPAR   &none                            &none      &kp RPAR   &kp RBRACE  &kp RBKT        &kp GT     &kp PIPE
-        &kp LCTRL  &none      &none      &none       &none      &kp COMMA  &to MOUSE     &none   &none      &none      &none       &kp MUTE_ACUTE  &kp EQL    &kp QMARK
+        &kp GRAVE  &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp KP_N4  &kp KP_N5                        &kp KP_N6  &kp KP_N7  &kp KP_N8   &kp KP_N9   &kp KP_N0  &kp CIRCUMFLEX
+        &none      &kp LT     &kp LBKT   &kp LBRACE  &kp LPAR   &none                            &none      &kp RPAR   &kp RBRACE  &kp RBKT    &kp GT     &kp PIPE
+        &kp LCTRL  &none      &none      &none       &none      &kp COMMA  &to MOUSE     &none   &none      &none      &none       &kp U_0301  &kp EQL    &kp QMARK
                                          &kp LGUI    &kp LALT   &mo GROSS  &kp SPC       &kp ENT &mo ZAHL1  &mo NAVI1  &mo SONDR
             >;
         };
