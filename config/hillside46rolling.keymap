@@ -42,7 +42,7 @@
             bindings = <
         &kp Q      &kp W  &kp K  &kp Z    &kp D    &kp P                                &kp O         &kp G      &kp L   &kp M       &kp SQT     &kp PLUS
         &kp TAB    &kp H  &kp C  &kp S    &kp T    &kp U                                &kp R         &kp I      &kp E   &kp N       &kp A       &kp SLASH
-        &kp LCTRL  &kp V  &kp X  &kp Y    &kp F    &kp DOT    &to MOUSE      &kp RALT   &kp BACKSPACE &kp B      &kp J   &WR_TEST /*U_0308*/      &kp MINUS   &kp COLON
+        &kp LCTRL  &kp V  &kp X  &kp Y    &kp F    &kp DOT    &to MOUSE      &kp RALT   &kp BACKSPACE &kp B      &kp J   &wr_test /*U_0308*/      &kp MINUS   &kp COLON
                                  &kp LGUI &kp LALT &mo GROSS  &kp SPC        &kp ENTER  &mo ZAHL1     &mo NAVI1  &mo SONDR
             >;
         };
@@ -133,7 +133,7 @@
             bindings = <
         &kp U_03B1  &kp U_03B2  &kp U_03B3  &kp U_03B4  &kp U_00A7  &kp PERCENT                              &kp U_03A9 &kp U_0394  &kp U_03A3  &kp U_00B5 &kp U_201E  &kp U_201C
         &none       &none       &kp U_00A9  &none       &none       &kp AMPERSAND                            &kp U_2611 &kp U_2610  &kp U_20AC  &none      &kp AT      &kp HASH
-        &none       &none       &none       &none       &kp DOLLAR  &kp U_2026     &to MOUSE      &none      &kp U_2612 &none       &none       &kp GRAVE  &kp UNDER   &kp U_00B7
+        &none       &none       &none       &none       &kp DOLLAR  &kp U_2026     &to MOUSE      &none      &kp U_2612 &none       &none       &kp GRAVE  &kp UNDER   &kp U_2022
                                             &kp LGUI    &kp LALT    &mo FUNKT      &kp SPC        &kp ENTER  &mo ZAHL1  &mo NAVI1   &mo SONDR
             >;
         };

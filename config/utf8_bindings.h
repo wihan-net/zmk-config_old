@@ -18,10 +18,7 @@
 
 
 
-
-#define OS_UNICODE_LEAD &macro_tap &kp LS(LC(U))
-#define OS_UNICODE_TRAIL &macro_tap &kp SPACE
-#define UC_MACRO(name, unicode_bindings) \
+#define UTF8(name, L1, L2, L3, L4) \
     / { \
         macros { \
             name: name { \
@@ -29,28 +26,12 @@
                 wait-ms = <0>; \
                 tap-ms = <0>; \
                 #binding-cells = <0>; \
-                bindings = <OS_UNICODE_LEAD>, <&macro_tap unicode_bindings>, <OS_UNICODE_TRAIL>; \
+                bindings = <&macro_tap &kp LS(LC(U))>, <&macro_tap &kp L1 &kp L2 &kp L3 &kp L4>, <&macro_tap &kp SPACE>; \
             }; \
         }; \
     };
 
-#define UC_MODMORPH(name, uc_binding, shifted_uc_binding) \
-    / { \
-        behaviors { \
-            name: name { \
-                compatible = "zmk,behavior-mod-morph"; \
-                #binding-cells = <0>; \
-                bindings = <uc_binding>, <shifted_uc_binding>; \
-                mods = <(MOD_LSFT|MOD_RSFT)>; \
-            }; \
-        }; \
-    };
-
-#define ZMK_UNICODE_SINGLE(name, L0, L1, L2, L3) \
-    UC_MACRO(name ## _lower, &kp L0 &kp L1 &kp L2 &kp L3) \
-    UC_MODMORPH(name, &name ## _lower, &none)
-
-ZMK_UNICODE_SINGLE(WR_TEST, N2, N0, A, C)
+UTF8(wr_test, N0, N0, A, N9)
 
 
 
@@ -60,7 +41,6 @@ ZMK_UNICODE_SINGLE(WR_TEST, N2, N0, A, C)
 #define U_00B2 <&kp LS(LC(U)) &kp N0 &kp N0 &kp  B &kp N2 &kp SPACE>    // ²
 #define U_00B3 <&kp LS(LC(U)) &kp N0 &kp N0 &kp  B &kp N3 &kp SPACE>    // ³
 #define U_00B5 <&kp LS(LC(U)) &kp N0 &kp N0 &kp  B &kp N5 &kp SPACE>    // µ
-#define U_00B7 <&kp LS(LC(U)) &kp N0 &kp N0 &kp  B &kp N7 &kp SPACE>    // ·
 #define U_00B9 <&kp LS(LC(U)) &kp N0 &kp N0 &kp  B &kp N9 &kp SPACE>    // ¹
 #define U_00BC <&kp LS(LC(U)) &kp N0 &kp N0 &kp  B &kp  C &kp SPACE>    // ¼
 #define U_00BD <&kp LS(LC(U)) &kp N0 &kp N0 &kp  B &kp  D &kp SPACE>    // ½
@@ -76,6 +56,7 @@ ZMK_UNICODE_SINGLE(WR_TEST, N2, N0, A, C)
 #define U_03B4 <&kp LS(LC(U)) &kp N0 &kp N3 &kp  B &kp N4 &kp SPACE>    // δ
 #define U_201C <&kp LS(LC(U)) &kp N2 &kp N0 &kp N1 &kp  C &kp SPACE>    // “
 #define U_201E <&kp LS(LC(U)) &kp N2 &kp N0 &kp N1 &kp  E &kp SPACE>    // „
+#define U_2022 <&kp LS(LC(U)) &kp N2 &kp N0 &kp N2 &kp N2 &kp SPACE>    // •
 #define U_2026 <&kp LS(LC(U)) &kp N2 &kp N0 &kp N2 &kp N6 &kp SPACE>    // …
 #define U_2070 <&kp LS(LC(U)) &kp N2 &kp N0 &kp N7 &kp N0 &kp SPACE>    // ⁰
 #define U_2074 <&kp LS(LC(U)) &kp N2 &kp N0 &kp N7 &kp N4 &kp SPACE>    // ⁴
