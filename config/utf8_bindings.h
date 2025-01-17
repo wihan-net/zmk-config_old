@@ -4,7 +4,7 @@
  * Definiert UTF-8-Zeichen für die Verwendung in ZMK-Keymaps.
  *
  * Verwendung:
- *      #define U_1234 &kp LS(LC(u)) &kp N1 &kp N2 &kp N3 &kp N4 &kp SPACE
+ *      #define U_1234 LS(LC(u)) &kp N1 &kp N2 &kp N3 &kp N4 &kp SPACE
  *          Definiert eine Zeichen U+1234 mit der Bezeichnung 'U_1234'.
  *      &kp U_1234
  *          Fügt das Zeichen U_1234 ein.
