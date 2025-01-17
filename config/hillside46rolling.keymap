@@ -44,7 +44,7 @@
 #define UTF8(name, a, b, c, d)  \
     macros { \
          Ame ## :  Ame { \
-            label = "ZM_" #name ; \
+            label = #name ; \
             compatible = "zmk,behavior-macro"; \
             wait-ms = <0>; \
             tap-ms = <0>; \
