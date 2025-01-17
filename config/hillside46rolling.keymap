@@ -37,6 +37,7 @@
     // KLEIN: ⇩ - Kleinbuchstaben
     // --------------------------------------------------
         KLEIN {
+            display-name = "⇩ Kleinbuchstaben";
             bindings = <
         &kp Q      &kp W  &kp K  &kp Z    &kp D    &kp P                                &kp O         &kp G      &kp L   &kp M       &kp SQT     &kp PLUS
         &kp TAB    &kp H  &kp C  &kp S    &kp T    &kp U                                &kp R         &kp I      &kp E   &kp N       &kp A       &kp SLASH
@@ -44,15 +45,16 @@
                                  &kp LGUI &kp LALT &mo GROSS  &kp SPC        &kp ENTER  &mo ZAHL1     &mo NAVI1  &mo SONDR
             >;
         };
-
+/*
     // --------------------------------------------------
     // GROSS: ⇧ - Großbuchstaben
     // --------------------------------------------------
         GROSS {
+            display-name = "⇧ Großbuchstaben";
             bindings = <
-        &kp Q      &kp W  &kp K  &kp Z    &kp D    &kp P                                 &kp O       &kp G      &kp L      &kp M       &kp DQT    &kp ASTERISK
-        &kp BTAB   &kp H  &kp C  &kp S    &kp T    &kp U                                 &kp R       &kp I      &kp E      &kp N       &kp A      &kp BSLH
-        &kp LCTRL  &kp V  &kp X  &kp Y    &kp F    &kp COMMA  &to MOUSE      &kp RALT    &kp DELETE  &kp B      &kp J      &kp U_0308  &kp MINUS  &kp SEMI
+        &kp Q        &kp W  &kp K  &kp Z    &kp D    &kp P                                 &kp O       &kp G      &kp L      &kp M       &kp DQT    &kp ASTERISK
+        &kp LS(TAB)  &kp H  &kp C  &kp S    &kp T    &kp U                                 &kp R       &kp I      &kp E      &kp N       &kp A      &kp BSLH
+        &kp LCTRL    &kp V  &kp X  &kp Y    &kp F    &kp COMMA  &to MOUSE      &kp RALT    &kp DELETE  &kp B      &kp J      &kp U_0308  &kp MINUS  &kp SEMI
                                  &kp LGUI &kp LALT &mo KLEIN  &kp SPC        &kp ENTER   &mo ZAHL2   &mo NAVI2  &mo FUNKT
             >;
         };
@@ -61,6 +63,7 @@
     // ZAHL1: № - Zahlen / Klammern
     // --------------------------------------------------
         ZAHL1 {
+            display-name = "№ Zahlen & Klammern";
             bindings = <
         &kp GRAVE  &kp KP_N1  &kp KP_N2  &kp KP_N3   &kp KP_N4  &kp KP_N5                          &kp KP_N6  &kp KP_N7  &kp KP_N8   &kp KP_N9   &kp KP_N0  &kp CIRCUMFLEX
         &none      &kp LT     &kp LBKT   &kp LBRACE  &kp LPAR   &none                              &none      &kp RPAR   &kp RBRACE  &kp RBKT    &kp GT     &kp PIPE
@@ -73,6 +76,7 @@
     // ZAHL2: ⇧ + № - Zahlen, Erweiterung (Sup, Sub, Brüche)
     // --------------------------------------------------
         ZAHL2 {
+            display-name = "⇧№ Zahlen, erweitert";
             bindings = <
         &none      &kp U_00B9  &kp U_00B2  &kp U_00B3  &kp U_2074  &kp U_2075                         &kp U_2076  &kp U_2077  &kp U_2078  &kp U_2079  &kp U_2070  &kp TILDE
         &none      &kp U_215F  &kp U_00BC  &kp U_00BD  &kp U_2154  &kp U_00BE                         &none       &none       &none       &none       &none       &none
@@ -85,6 +89,7 @@
     // NAVI1: ⎈ - Navigation
     // --------------------------------------------------
         NAVI1 {
+            display-name = "⎈ Navigation";
             bindings = <
         &none      &none  &none     &none     &none     &none                             &kp PG_UP    &kp HOME   &none      &none           &none      &none
         &none      &none  &none     &none     &none     &none                             &none        &kp LEFT   &kp UP     &kp DOWN        &kp RIGHT  &none
@@ -97,6 +102,7 @@
     // NAVI2: ⇧ + ⎈ - Navigation, (Rahmen, Pfeile)
     // --------------------------------------------------
         NAVI2 {
+            display-name = "⇧⎈ Rahmen & Pfeile";
             bindings = <
         &none  &kp U_2554  &kp U_250C  &kp U_2500  &kp U_2510  &kp U_2557                            &none       &kp U_2196  &kp U_21D1  &kp U_21B0  &kp U_2197  &none
         &none  &kp U_251C  &kp U_253C  &kp U_2524  &kp U_2502  &kp U_2551                            &kp U_21D0  &kp U_2190  &kp U_2191  &kp U_2193  &kp U_2192  &kp U_21D2
@@ -109,6 +115,7 @@
     // MOUSE: 🖱 - Maussteuerung
     // --------------------------------------------------
         MOUSE {
+            display-name = "🖱 Maussteuerung";
             bindings = <
         &none      &none  &none  &none  &none  &none                                   &mkp MB5   &msc SCRL_UP    &msc SCRL_LEFT  &msc SCRL_RIGHT  &none            &none
         &none      &none  &none  &none  &none  &none                                   &none      &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &none
@@ -121,6 +128,7 @@
     // SONDR: ☍ - Sonderzeichen
     // --------------------------------------------------
         SONDR {
+            display-name = "☍ Sonderzeichen";
             bindings = <
         &kp U_03B1  &kp U_03B2  &kp U_03B3  &kp U_03B4  &kp U_00A7  &kp PERCENT                              &kp U_03A9 &kp U_0394  &kp U_03A3  &kp U_00B5 &kp U_201E  &kp U_201C
         &none       &none       &kp U_00A9  &none       &none       &kp AMPERSAND                            &kp U_2611 &kp U_2610  &kp U_20AC  &none      &kp AT      &kp HASH
@@ -133,6 +141,7 @@
     // FUNKT: 𝑓 - Funktionen, Mediensteuerung
     // --------------------------------------------------
         FUNKT {
+            display-name = "𝑓 Funktionen";
             bindings = <
         &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &none     &none     &kp PRINTSCREEN                              &none      &none         &none      &none  &kp C_MUTE     &kp C_VOL_UP
         &none       &none             &none       &none     &none     &out OUT_USB                                 &none      &kp INSERT    &kp ESC    &none  &none          &none
@@ -140,5 +149,6 @@
                                                   &kp LGUI  &kp LALT  &mo GROSS        &kp SPC          &kp ENTER  &mo ZAHL1  &mo NAVI1     &mo SONDR
              >;
         };
+*/
     };
 };
