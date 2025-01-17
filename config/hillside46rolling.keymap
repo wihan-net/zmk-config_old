@@ -39,7 +39,7 @@
             bindings = <
         &kp Q      &kp W  &kp K  &kp Z    &kp D    &kp P                              &kp O         &kp G      &kp L   &kp M       &kp SQT     &kp PLUS
         &kp TAB    &kp H  &kp C  &kp S    &kp T    &kp U                              &kp R         &kp I      &kp E   &kp N       &kp A       &kp SLASH
-        &kp LCTRL  &kp V  &kp X  &kp Y    &kp F    &kp DOT    &to MOUSE      &kp RALT &kp BACKSPACE &kp B      &kp J   &kp U_0308  &kp MINUS   &kp COLON
+        &kp LCTRL  &kp V  &kp X  &kp Y    &kp F    &kp DOT    &to MOUSE      &kp RALT &kp BACKSPACE &kp B      &kp J   &none /*42/345 &kp U_0308*/  &kp MINUS   &kp COLON
                                  &kp LGUI &kp LALT &mo GROSS  &kp SPC        &kp ENT  &mo ZAHL1     &mo NAVI1  &mo SONDR
             >;
         };
