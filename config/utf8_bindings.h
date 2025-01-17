@@ -16,7 +16,44 @@
  */
 #pragma once
 
-#define WR_TEST (&kp O &kp K)
+
+
+
+#define OS_UNICODE_LEAD &macro_tap &kp LS(LC(U))
+#define OS_UNICODE_TRAIL &macro_tap &kp SPACE
+#define UC_MACRO(name, unicode_bindings) \
+    / { \
+        macros { \
+            name: name { \
+                compatible = "zmk,behavior-macro"; \
+                wait-ms = <0>; \
+                tap-ms = <0>; \
+                #binding-cells = <0>; \
+                bindings = <OS_UNICODE_LEAD>, <&macro_tap unicode_bindings>, <OS_UNICODE_TRAIL>; \
+            }; \
+        }; \
+    };
+
+#define UC_MODMORPH(name, uc_binding, shifted_uc_binding) \
+    / { \
+        behaviors { \
+            name: name { \
+                compatible = "zmk,behavior-mod-morph"; \
+                #binding-cells = <0>; \
+                bindings = <uc_binding>, <shifted_uc_binding>; \
+                mods = <(MOD_LSFT|MOD_RSFT)>; \
+            }; \
+        }; \
+    };
+
+#define ZMK_UNICODE_SINGLE(name, L0, L1, L2, L3) \
+    UC_MACRO(name ## _lower, &kp L0 &kp L1 &kp L2 &kp L3) \
+    UC_MODMORPH(name, &name ## _lower, &none)
+
+ZMK_UNICODE_SINGLE(WR_TEST, N2, N0, A, C)
+
+
+
 
 #define U_00A7 <&kp LS(LC(U)) &kp N0 &kp N0 &kp  A &kp N7 &kp SPACE>    // §
 #define U_00A9 <&kp LS(LC(U)) &kp N0 &kp N0 &kp  A &kp N9 &kp SPACE>    // ©
