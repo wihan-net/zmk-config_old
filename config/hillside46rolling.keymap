@@ -38,7 +38,7 @@
         KLEIN {
             bindings = <
         &kp Q      &kp W  &kp K  &kp Z    &kp D    &kp P                              &kp O         &kp G      &kp L   &kp M          &kp SQT     &kp PLUS
-        &kp TAB    &kp H  &kp C  &kp S    &kp T    &kp U                              &kp R         &kp I      &kp E   &kp N          &kp A_SLASH &kp SLASH
+        &kp TAB    &kp H  &kp C  &kp S    &kp T    &kp U                              &kp R         &kp I      &kp E   &kp N          &kp A       &kp SLASH
         &kp LCTRL  &kp V  &kp X  &kp Y    &kp F    &kp DOT    &to MOUSE      &kp RALT &kp BACKSPACE &kp B      &kp J   &kp MUTE_UMLA  &kp MINUS   &kp COLON
                                  &kp LGUI &kp LALT &mo GROSS  &kp SPC        &kp ENT  &mo ZAHL1     &mo NAVI1  &mo SONDR
             >;
@@ -50,7 +50,7 @@
         GROSS {
             bindings = <
         &kp Q      &kp W  &kp K  &kp Z    &kp D    &kp P                               &kp O       &kp G      &kp L      &kp M          &kp DQT    &kp ASTERISK
-        &kp BTAB   &kp H  &kp C  &kp S    &kp T    &kp U                               &kp R       &kp I      &kp E      &kp N          &kp BSLH   &kp BSLH
+        &kp BTAB   &kp H  &kp C  &kp S    &kp T    &kp U                               &kp R       &kp I      &kp E      &kp N          &kp A      &kp BSLH
         &kp LCTRL  &kp V  &kp X  &kp Y    &kp F    &kp COMMA  &to MOUSE      &kp RALT  &kp DELETE  &kp B      &kp J      &kp MUTE_UMLA  &kp MINUS  &kp SEMI
                                  &kp LGUI &kp LALT &mo KLEIN  &kp SPC        &kp ENT   &mo ZAHL2   &mo NAVI2  &mo FUNKT
             >;
