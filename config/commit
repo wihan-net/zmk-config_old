@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+
+git status
+
+read -p "Möchtest du committen? (j/n): " confirm
+if [[ "$confirm" != "j" ]]; then
+    echo "Abbruch: Kein Commit durchgeführt."
+    exit 0
+fi
+
+if [[ -z "$1" ]]; then
+    read -p "Bitte gib eine Commit-Beschreibung ein: " commit_message
+else
+    commit_message="$*"
+fi
+
+git add .
+git commit -m "$commit_message"
+git push origin main
