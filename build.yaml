@@ -24,9 +24,9 @@ include:
 # Hillside 46 rolling (WR)
 #   Comment out below if you do not have this board, to save build time
   - board: nice_nano_v2
-    shield: hillside46_rolling_left
+    shield: hillside46rolling_left
   - board: nice_nano_v2
-    shield: hillside46_rolling_right
+    shield: hillside46rolling_right
 
 
 # Hillside 48
