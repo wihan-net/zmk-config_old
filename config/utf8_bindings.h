@@ -16,7 +16,7 @@
  */
 #pragma once
 
-#define WR_TEST (ZMK_HID_USAGE(HID_USAGE_CONSUMER, 0x00A9))
+#define WR_TEST (&kp O &kp K)
 
 #define U_00A7 <&kp LS(LC(U)) &kp N0 &kp N0 &kp  A &kp N7 &kp SPACE>    // §
 #define U_00A9 <&kp LS(LC(U)) &kp N0 &kp N0 &kp  A &kp N9 &kp SPACE>    // ©
