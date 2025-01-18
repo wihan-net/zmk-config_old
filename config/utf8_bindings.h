@@ -14,19 +14,19 @@
  *      https://zmk.dev/docs/keymaps/list-of-keycodes
  *      https://www.compart.com/de/unicode/block
  */
-#pragma once
+
 
 
 
 
     macros { \
-        wr_test: wr_test { \
-            label = "name"; \
-            compatible = "zmk,behavior-macro"; \
-            wait-ms = <0>; \
-            tap-ms = <0>; \
-            #binding-cells = <0>; \
-            bindings = <&macro_tap &kp LS(LC(U))>, <&macro_tap &kp N0 &kp N0 &kp A &kp N9>, <&macro_tap &kp SPACE>; \
+        wr_test: wr_test {
+            label = "name";
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LS(LC(U)) &kp N0 &kp N0 &kp A &kp N9 &kp SPACE>;
         }; \
     };
 
