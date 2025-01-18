@@ -17,23 +17,20 @@
 
 
 
-
-
-    macros { \
-        wr_test: wr_test {
-            label = "name";
-            compatible = "zmk,behavior-macro";
-            wait-ms = <0>;
-            tap-ms = <0>;
-            #binding-cells = <0>;
-            bindings = <&macro_tap &kp LS(LC(U)) &kp N0 &kp N0 &kp A &kp N9 &kp SPACE>;
-        }; \
+macros {
+    wr_test: wr_test {
+        label = "name";
+        compatible = "zmk,behavior-macro";
+        wait-ms = <0>;
+        tap-ms = <0>;
+        #binding-cells = <0>;
+        bindings = <&macro_tap &kp LS(LC(U)) &kp N0 &kp N0 &kp A &kp N9 &kp SPACE>;
     };
+};
 
 
 
-
-
+/*
 #define U_00A7 <&kp LS(LC(U)) &kp N0 &kp N0 &kp  A &kp N7 &kp SPACE>    // §
 #define U_00A9 <&kp LS(LC(U)) &kp N0 &kp N0 &kp  A &kp N9 &kp SPACE>    // ©
 #define U_00B2 <&kp LS(LC(U)) &kp N0 &kp N0 &kp  B &kp N2 &kp SPACE>    // ²
@@ -106,3 +103,4 @@
 #define U_2610 <&kp LS(LC(U)) &kp N2 &kp N6 &kp N1 &kp N0 &kp SPACE>    // ☐
 #define U_2611 <&kp LS(LC(U)) &kp N2 &kp N6 &kp N1 &kp N1 &kp SPACE>    // ☑
 #define U_2612 <&kp LS(LC(U)) &kp N2 &kp N6 &kp N1 &kp N2 &kp SPACE>    // ☒
+*/
