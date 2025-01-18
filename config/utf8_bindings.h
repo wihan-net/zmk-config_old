@@ -18,7 +18,7 @@
 
 
 
-/ { \
+
     macros { \
         wr_test: wr_test { \
             label = "name"; \
@@ -28,8 +28,7 @@
             #binding-cells = <0>; \
             bindings = <&macro_tap &kp LS(LC(U))>, <&macro_tap &kp N0 &kp N0 &kp A &kp N9>, <&macro_tap &kp SPACE>; \
         }; \
-    }; \
-};
+    };
 
 
 
